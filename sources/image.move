@@ -34,3 +34,19 @@ public fun destroy(self: Image): StoredBlob {
 
     blob
 }
+
+public fun blob(self: &Image): &StoredBlob {
+    &self.blob
+}
+
+public fun format(self: &Image): &String {
+    &self.format
+}
+
+public fun height(self: &Image): Option<u32> {
+    self.height
+}
+
+public fun width(self: &Image): Option<u32> {
+    self.width
+}
